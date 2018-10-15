@@ -14,17 +14,26 @@ body {
   padding: 0;
 }
 
+h1 {
+  font-family: 'Italiana', serif;
+}
+
 .intro {
   top: 0;
   background: var(--oc-gray-0);
   min-height: 35pt;
   padding-top: 340pt;
-  width:100%;
-  height:580pt;
+  width: 100%;
+  height: 380pt;
+  box-shadow: 4px 8px 16px var(--oc-gray-1);
 }
 
 p {
   color: var(--oc-gray-9);
+}
+
+#navbar {
+  box-shadow: 4px 8px 8px var(--oc-gray-1);
 }
 
 nav ul {
@@ -33,8 +42,8 @@ nav ul {
   width: 100%;
   background-color: var(--oc-gray-0);
   border: var(--oc-gray-4);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  /* border-bottom-style: solid; */
+  /* border-bottom-width: 1px; */
 }
 
 nav ul li {
@@ -50,36 +59,31 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: green;
+  color: var(--oc-gray-5);
 }
 
-.work {
-  padding-top: 60px;
-  margin-top: -60px;
-}
-
-.work .work-header {
-  margin-top: 50px;
-  color: #008080;
+.works .works-header {
+  padding: 50pt;
+  color: var(--oc-gray-9);
   font-weight: normal;
+  margin: auto;
 }
 
 .project {
   text-decoration: none;
-  color: #008080;
+  color: var(--oc-gray-9);
   display: inline-block;
   overflow: hidden;
-  border: 2px solid lightblue;
-  height: 220px;
-  width: 280px;
-  margin: 40px 100px;
-  /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
+  border: 1px solid var(--oc-gray-4);
+  height: 155pt;
+  width: 200pt;
+  margin: 30pt 50pt;
 }
 
 .project-pic {
   width: 100%;
-  height: 180px;
-  border-bottom: 2px solid lightblue;
+  height: 135pt;
+  border-bottom: 1px solid var(--oc-gray-4);
 }
 
 .project-title {
@@ -91,83 +95,84 @@ nav ul li a:hover {
   display: block;
   width: 200px;
   height: 30px;
-  margin: 20px auto 90px;
-   background: #e0ebe8;
-  color: #008080;
+  margin: 50pt auto 50pt;
+  background: var(--oc-gray-1);
+  color: var(--oc-gray-9);
   font-weight: bold;
-  font-size: 1em;
-  border: 2px solid #90C695;
-  border-radius: 4px;
+  font-size: 1.5em;
+  border: 1px solid var(--oc-gray-4);
+  border-radius: 4pt;
   cursor: pointer;
-  padding-top:10px;
+  padding: 10pt;
 }
 
 
 .show-all:hover {
-  background: #E4F1FE;
-  color: green;
+  background: var(--oc-white);
+  color: var(--oc-gray-7);
 }
 
 @media only screen and (max-width: 500px) {
   nav ul {
     text-align: center;
   }
+
   nav ul li {
-    margin: 20px;
+    margin: 20pt;
   }
+
   .project {
-    margin: 40px 0;
+    margin: 40pt 0;
   }
 }
 
 .contact {
-  /*   height:800px; */
-  /*   min-height:800px; */
-  background: #C8F7C5;
-  padding-bottom: 160px;
+  background: var(--oc-gray-0);
+  padding-top: 15pt;
+  padding-bottom: 15pt;
+  box-shadow: 4px -8px 16px var(--oc-gray-1);
 }
 
 .header {
-  padding: 160px 0 110px;
+  padding: 160pt 0 110pt;
 }
 
 .contact-details {
   display: inline-block;
   font-weight: bold;
-  margin: 0 35px 45px 35px;
+  margin: 0 35pt 45pt 35pt;
   list-style-type: none;
-  border: 2px solid #90C695;
+  border: 1px solid var(--oc-gray-4);
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  background: #e0ebe8;
-  color: #008080;
+  width: 80pt;
+  height: 80pt;
+  line-height: 80pt;
+  background: var(--oc-gray-1);
+  color: var(--oc-gray-9);
   text-decoration: none;
 }
 
 .contact-details:hover {
-  background: #E4F1FE;
-  color: green;
+  background: var(--oc-white);
+  color: var(--oc-gray-7);
 }
 
 footer {
   padding: 20px;
-  background: #22313F;
-  color: white;
+  background: var(--oc-white);
+  color: var(--oc-gray-9);
   line-height: 40px;
+  box-shadow: 4px -8px 16px var(--oc-gray-1);
 }
 
 footer a {
-  color: white;
+  color: var(--oc-gray-7);
 }
 
 @media only screen and (max-width: 367px) {
-  /*    #contact{
-    min-height:1100px;
-  } */
+
   .contact-details {
-    border: 2px solid #90C695;
+    border: 1px solid var(--oc-gray-0);
     border-radius: 0;
     width: 90px;
     height: 20px;
